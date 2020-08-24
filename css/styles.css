@@ -3,6 +3,9 @@
   --color-desaturated-red: hsl(0, 36%, 70%);
   --color-soft-red: hsl(0, 93%, 68%);
   --color-dark-grayish-red: hsl(0, 6%, 24%);
+  --color-linear-gradient-1-from: hsl(0, 0%, 100%);
+  --color-linear-gradient-1-to: hsl(0, 100%, 98%);
+  --color-linear-gradient-2-from: hsl(0, 80%, 86%);
   --family-Josefin-Sans: 'Josefin Sans', sans-serif; }
 
 body {
@@ -18,6 +21,9 @@ h5,
 p {
   margin: 0; }
 
+figure > img {
+  width: 100%; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -25,5 +31,64 @@ img {
 a {
   display: block;
   text-decoration: none; }
+
+span {
+  display: block; }
+
+.container {
+  background-image: linear-gradient(135deg, white, #fff5f5); }
+
+.header {
+  padding: 2em 0 2em 2em; }
+
+.apparel {
+  padding: 3em 1em 4em;
+  text-align: center;
+  color: var(--color-desaturated-red); }
+  .apparel__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-dark-grayish-red);
+    font-size: 2.5em;
+    letter-spacing: 7px;
+    line-height: 1.1; }
+    .apparel__title span {
+      display: block;
+      color: var(--color-desaturated-red);
+      font-weight: 300; }
+  .apparel__description {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 1.5em 0; }
+  .apparel__form div {
+    position: relative;
+    width: 90%;
+    margin: 0 auto; }
+  .apparel__form input {
+    position: relative;
+    width: 90%;
+    padding: 1em 0 1em 1.5em;
+    border-radius: 20px;
+    background-color: var(--color-linear-gradient-1-to);
+    border: thin solid #dddddd; }
+    .apparel__form input::placeholder {
+      color: #919191;
+      font-size: .9em; }
+    .apparel__form input:focus {
+      outline: none; }
+  .apparel__form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: .78em 1.5em;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    box-shadow: 0 1px 1px rgba(65, 58, 58, 0.05), 0 2px 2px rgba(65, 58, 58, 0.05), 0 3px 3px rgba(65, 58, 58, 0.05), 0 4px 4px rgba(65, 58, 58, 0.05), 0 5px 5px rgba(65, 58, 58, 0.05), 0 6px 6px rgba(65, 58, 58, 0.05), 0 7px 7px rgba(65, 58, 58, 0.05), 0 8px 8px rgba(65, 58, 58, 0.05); }
+  .apparel__form .error-icon {
+    position: absolute;
+    right: 1.4em;
+    top: .5em;
+    z-index: -1; }
 
 /*# sourceMappingURL=styles.css.map */

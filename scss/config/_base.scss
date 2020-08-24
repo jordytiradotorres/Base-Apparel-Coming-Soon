@@ -12,11 +12,25 @@ h5,
 p {
   margin: 0;
 }
+
+figure > img {
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   display: block;
   text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+.container {
+  background-image: linear-gradient($linear-gradient1);
 }

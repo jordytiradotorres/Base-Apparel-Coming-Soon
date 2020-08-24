@@ -1,2 +1,7 @@
 @import './config/variables';
+@import './functions/long-shadow';
+@import 'mixins/media-queries';
 @import './config/base';
+
+@import './components/header';
+@import './components/apparel';
