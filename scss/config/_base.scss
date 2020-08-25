@@ -1,6 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: var(--family-Josefin-Sans);
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 figure,
@@ -13,8 +24,10 @@ p {
   margin: 0;
 }
 
-figure > img {
+figure img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 img {
@@ -31,6 +44,22 @@ span {
   display: block;
 }
 
+input:focus,
+button:focus {
+  outline: none;
+}
+
 .container {
   background-image: linear-gradient($linear-gradient1);
+  @include mq(medium) {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px 1fr;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: bottom center;
+    background-size: cover;
+    background-color: var(--color-linear-gradient-1-to);
+
+    max-width: 1200px;
+  }
 }

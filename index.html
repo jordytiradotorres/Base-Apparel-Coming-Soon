@@ -21,7 +21,13 @@
       </header>
 
       <figure class="hero">
-        <img src="./images/hero-mobile.jpg" alt="hero image" />
+        <picture>
+          <source
+            srcset="./images/hero-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/hero-mobile.jpg" alt="hero image" />
+        </picture>
       </figure>
 
       <main class="apparel">
@@ -37,12 +43,15 @@
 
         <form action="#" class="apparel__form">
           <div>
-            <input type="email" placeholder="Email Address" />
+            <input type="email" id="email" placeholder="Email Address" required />
             <button type="submit">
               <img src="./images/icon-arrow.svg" alt="icon arrow" />
             </button>
-            <span class="error-icon"><img src="./images/icon-error.svg" alt="icon error" /></span>
+            <span class="error-icon">
+              <img src="./images/icon-error.svg" alt="icon error" />
+            </span>
           </div>
+          <span class="error"></span>
         </form>
       </main>
     </div>
