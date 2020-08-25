@@ -30,7 +30,6 @@ function showError() {
         emailError.innerHTML = "Please provide a valid email"
         button.style.transform = "translateX(35px)";
         button.style.padding = "0.78em 2.5em";
-        // button.style.right = "0";
         iconError.style.zIndex = "1"
     }
     emailError.classList = "error active";
